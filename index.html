@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Internship Landing Page - Level 3</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root{
+      --overlay: rgba(0,0,0,0.55);
+      --accent: #28a745;
+      --white: #ffffff;
+    }
+
+    *{box-sizing:border-box}
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=60') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--white);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    header {
+      text-align: center;
+      padding: 36px 20px;
+      background-color: rgba(0,0,0,0.45);
+      backdrop-filter: blur(4px);
+    }
+    header h1{margin:0;font-size:clamp(24px,3.5vw,40px)}
+    header p{margin:8px 0 0;font-size:14px;color:rgba(255,255,255,0.9)}
+
+    .wrap {
+      max-width: 1100px;
+      margin: 28px auto;
+      padding: 0 16px;
+    }
+
+    /* Slideshow container */
+    .slideshow {
+      position: relative;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+      border: 4px solid rgba(255,255,255,0.08);
+      background-color: rgba(0,0,0,0.2);
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.6s ease;
+      width: 100%;
+    }
+
+    .slide {
+      min-width: 100%;
+      position: relative;
+      user-select: none;
+    }
+
+    .slide img{
+      width:100%;
+      height: auto;
+      display:block;
+      vertical-align: middle;
+      object-fit: cover;
+      max-height: 480px;
+    }
+
+    /* caption overlay */
+    .caption {
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+      background: var(--overlay);
+      padding: 10px 14px;
+      border-radius: 6px;
+      color: var(--white);
+      font-size: 15px;
+      max-width: calc(100% - 40px);
+    }
+
+    /* Prev/Next buttons */
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      border: none;
+      color: var(--white);
+      padding: 10px 14px;
+      cursor: pointer;
+      font-size: 20px;
+      border-radius: 6px;
+      transition: background .2s;
+    }
+    .nav-btn:hover{background: rgba(0,0,0,0.75)}
+    .prev { left: 14px; }
+    .next { right: 14px; }
+
+    /* Dots */
+    .dots {
+      text-align: center;
+      padding: 12px 0 0;
+      background: rgba(0,0,0,0.18);
+    }
+    .dot {
+      display: inline-block;
+      width:10px;height:10px;border-radius:50%;
+      margin: 0 6px;
+      background: rgba(255,255,255,0.4);
+      cursor: pointer;
+      transition: transform .15s, background .15s;
+    }
+    .dot.active{
+      background: var(--accent);
+      transform: scale(1.2);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    /* Apply section & form */
+    .apply-section {
+      margin-top: 20px;
+      padding: 22px;
+      background: rgba(0,0,0,0.5);
+      border-radius: 10px;
+      text-align: center;
+      color: var(--white);
+    }
+    .apply-section h2{margin-top:0}
+    .apply-section form{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+    .apply-section input[type="text"],
+    .apply-section input[type="email"],
+    .apply-section input[type="password"],
+    .apply-section input[type="tel"]{
+      padding:10px 12px;
+      border-radius:6px;
+      border: none;
+      min-width:240px;
+    }
+    .apply-section button{
+      padding: 10px 18px;
+      border-radius:6px;
+      border: none;
+      background: var(--accent);
+      color: #fff;
+      cursor:pointer;
+    }
+    .apply-section button:hover{opacity:.95}
+
+    footer{
+      text-align:center;
+      margin:24px auto 48px;
+      color:rgba(255,255,255,0.85);
+      font-size:14px;
+      max-width:1100px;
+    }
+
+    /* Responsive */
+    @media (max-width:700px){
+      .caption{left:12px;right:12px;font-size:13px}
+      .nav-btn{padding:8px 10px;font-size:18px}
+      .apply-section input{min-width:100%}
+      .slides img{max-height:320px}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cognifyz Internship - Level 3</h1>
+    <p>Build real projects and improve your web skills</p>
+  </header>
+
+  <div class="wrap">
+
+    <!-- SLIDESHOW -->
+    <div class="slideshow" id="slideshow" aria-label="Internship slideshow">
+      <div class="slides" id="slides">
+        <!-- Slide 1 -->
+        <div class="slide" data-caption="Real-world AI & Cloud projects">
+          <!-- Use local images: src="../assets/slide1.jpg" OR online URL -->
+          <img src="C:\Users\DELL\Desktop\Internship Tasks\Level3\assests\slide3.jpeg" alt="technology and code">
+          <div class="caption">Real-world AI & Cloud projects</div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide" data-caption="Hands-on mentoring & tasks">
+          <img src="C:\Users\DELL\Desktop\Internship Tasks\Level3\assests\slide1.jpeg" alt="coding on laptop">
+          <div class="caption">Hands-on mentoring & tasks</div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide" data-caption="Build your portfolio">
+          <img src="C:\Users\DELL\Desktop\Internship Tasks\Level3\bg.jpeg" alt="developer coding">
+          <div class="caption">Build your portfolio</div>
+        </div>
+      </div>
+
+      <!-- navigation buttons -->
+      <button class="nav-btn prev" id="prevBtn" aria-label="Previous slide">&#10094;</button>
+      <button class="nav-btn next" id="nextBtn" aria-label="Next slide">&#10095;</button>
+    </div>
+
+    <!-- dots / indicators -->
+    <div class="dots" id="dots" aria-hidden="false"></div>
+
+    <!-- APPLY SECTION -->
+    <div class="apply-section" aria-labelledby="apply-title">
+      <h2 id="apply-title">Apply Now</h2>
+      <form id="applyForm" onsubmit="submitForm(event)">
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="password" name="password" placeholder="Enter your password" required>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <input type="tel" name="phone" placeholder="Enter your phone number" required>
+        <input type="text" name="address" placeholder="Enter your address" required>
+        <div style="width:100%;text-align:center;">
+          <button type="submit">Submit Application</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>&copy; 2025 Cognifyz Technologies. All rights reserved.</footer>
+
+  <script>
+    // --- Slideshow logic (with controls + dots + auto-play + pause on hover) ---
+    (function(){
+      const slidesEl = document.getElementById('slides');
+      const slideEls = Array.from(document.querySelectorAll('.slide'));
+      const dotsContainer = document.getElementById('dots');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      let current = 0;
+      const total = slideEls.length;
+      let autoplay = true;
+      const intervalTime = 3000;
+      let timer;
+
+      // build dots
+      slideEls.forEach((s, i) => {
+        const dot = document.createElement('span');
+        dot.className = 'dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('data-index', i);
+        dot.addEventListener('click', () => goTo(i));
+        dotsContainer.appendChild(dot);
+      });
+
+      const dots = Array.from(document.querySelectorAll('.dot'));
+
+      function update() {
+        // translate slides container
+        slidesEl.style.transform = `translateX(-${current * 100}%)`;
+        dots.forEach((d, i) => d.classList.toggle('active', i === current));
+      }
+
+      function next() {
+        current = (current + 1) % total;
+        update();
+      }
+      function prev() {
+        current = (current - 1 + total) % total;
+        update();
+      }
+      function goTo(index) {
+        current = index;
+        update();
+        resetTimer();
+      }
+
+      // autoplay
+      function startTimer() {
+        if (!autoplay) return;
+        timer = setInterval(next, intervalTime);
+      }
+      function stopTimer() {
+        clearInterval(timer);
+      }
+      function resetTimer() {
+        stopTimer();
+        startTimer();
+      }
+
+      // attach events
+      nextBtn.addEventListener('click', () => { next(); resetTimer(); });
+      prevBtn.addEventListener('click', () => { prev(); resetTimer(); });
+
+      // pause on hover
+      const slideshow = document.getElementById('slideshow');
+      slideshow.addEventListener('mouseenter', () => stopTimer());
+      slideshow.addEventListener('mouseleave', () => startTimer());
+
+      // keyboard support
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') { next(); resetTimer(); }
+        if (e.key === 'ArrowLeft') { prev(); resetTimer(); }
+      });
+
+      // initialize
+      update();
+      startTimer();
+    })();
+
+    // form submit
+    function submitForm(e){
+      e.preventDefault();
+      const form = document.getElementById('applyForm');
+      const name = form.name.value;
+      // (you can add validation or send to server here)
+      alert(`Thank you ${name}! Your application has been submitted.`);
+      form.reset();
+    }
+  </script>
+</body>
+</html>
