@@ -45,6 +45,7 @@ Technologies Used
 Folder Structure
 
 Internship Levels
+
 Level 1:
 Basic HTML structure
 CSS styling
@@ -57,27 +58,23 @@ Front-end frameworks
 Level 3
 Advanced layouts
 Interactive elements
-🎯 Learning Outcomes
+
+🎯 Learning Outcomes:
 Understanding of HTML, CSS, and JavaScript
-
 Responsive web design techniques
-
 Organizing project files for maintainability
-
 Using GitHub for version control
 
-🚀 Future Improvements
+🚀 Future Improvements:
 Add animations and transitions
-
 Improve form validation
-
 Create a dark/light mode toggle
 
-Deploy to GitHub Pages
+Deploy to GitHub Pages:
 
 📞 Contact
-Your Name
-📧 Email: pachimatlnandhini@gmail.com
-🔗 LinkedIn:https://www.linkedin.com/in/nandhini-pachimatla-b24b5736a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+Your Name:pachimatla Nandhini.
+📧 Email: pachimatlnandhini@gmail.com.
+🔗 LinkedIn:https://www.linkedin.com/in/nandhini-pachimatla-b24b5736a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app.
 
 # cognifyz1
