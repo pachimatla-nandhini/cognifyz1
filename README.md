@@ -19,11 +19,10 @@ The project demonstrates my learning and skills in **HTML, CSS, JavaScript, and 
 
 ---
 
- Project Overview
-This project was created as part of my internship program at **Cognifyz Technologies**.  
-It contains multiple web pages with structured layouts, background images, responsive design, and interactive elements.
-
----
+ Project Overview:
+This web development project was built as part of my internship program at **Cognifyz Technologies**.  
+It consists of multiple web pages with structured layouts, background images, responsive design, and interactive elements.  
+The main goal of this project was to **practice and implement front-end web development skills** in real-world scenarios.
 
  Features
 - **Home Page** — Welcomes visitors and introduces the internship program.
@@ -69,6 +68,11 @@ Using GitHub for version control
 Add animations and transitions
 Improve form validation
 Create a dark/light mode toggle
+
+
+🙏 Acknowledgements
+Special thanks to Cognifyz Technologies for providing guidance and an opportunity to work on real-world web development tasks.
+Also, thanks to online learning resources and communities that helped in solving issues during development.
 
 Deploy to GitHub Pages:
 
